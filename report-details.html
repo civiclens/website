@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/report-details.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-building-check"
+                viewBox="0 0 16 16">
+                <path
+                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514" />
+                <path
+                    d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <h3>Report</h3>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="home.html"><span><i class='bx bx-home-alt-2'></i></span>Home</a></li>
+                <li><a href="notification.html"><span><i class='bx bx-bell'></i></span>Notification</a></li>
+                <li><a href="profile.html"><span><i class='bx bx-user-circle'></i></span>Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="mb-4">Reported Issue Details</h2>
+
+        <!-- Uploaded Images -->
+        <div class="preview-images" id="preview-images"></div>
+
+        <!-- Description -->
+        <p><strong>Description:</strong> <span id="issue-description"></span></p>
+        <p><strong>Location:</strong> <span id="issue-location"></span></p>
+
+        <!-- Problem Details -->
+        <div class="mb-3">
+            <label class="form-label">Problem Type</label>
+            <select class="form-select" id="problem-type">
+                <option>Road</option>
+                <option>Street Light</option>
+                <option>Garbage</option>
+                <option>Water</option>
+                <option>Medical</option>
+                <option>Electricity</option>
+                <option>Traffic Signal</option>
+                <option>Potholes</option>
+                <option>Drainage</option>
+                <option>Parking</option>
+                <option>Pollution</option>
+                <option>Animal Control</option>
+                <option>Public Transport</option>
+                <option>Parks</option>
+                <option>Fire Safety</option>
+                <option>Construction</option>
+                <option>Education</option>
+                <option>Sanitation</option>
+                <option>Waterlogging</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Severity</label>
+            <select class="form-select">
+                <option>High Impact</option>
+                <option>Intermediate Impact</option>
+                <option>Minimum Impact</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Allocate to Department</label>
+            <select class="form-select">
+                <option>Municipal Corporation</option>
+                <option>Municipality</option>
+                <option>Notified Area Committee</option>
+                <option>Town Area Committee</option>
+                <option>Cantonment Board</option>
+                <option>Township</option>
+                <option>Port Trust</option>
+                <option>Special Purpose Agency</option>
+            </select>
+        </div>
+
+        <div class="submit-btn">
+            <button class="btn btn-success">Submit Report</button>
+        </div>
+    </div>
+
+    <script src="assets/JAVA_SCRIPT/report-details.js"></script>
+</body>
+
+</html>

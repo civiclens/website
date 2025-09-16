@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Playwrite+CA:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --background-color: white;
+    --logo-color: red;
+    --logo-text-color: rgb(0, 0, 0);
+    --report-btn-bg: rgb(25, 73, 215);
+    --text-color: white;
+    --navlink-text-color: rgb(0, 0, 0);
+    --navlink-hover-color: rgb(19, 37, 97);
+    --nav-after-hover-bg: black;
+    --icon-color: darkorange;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    ;
+}
+
+body {
+
+    background-image: linear-gradient(white, gray, rgb(76, 74, 74), rgb(29, 28, 28));
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 100;
+    transition: all .5s ease;
+}
+
+.bgch-scroll {
+    background-color: rgb(50, 97, 198);
+    box-shadow: 0 3px 10px rgb(19, 37, 97, .5);
+}
+
+
+.header .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section svg {
+    height: 5vh;
+    color: var(--logo-color)
+}
+
+.logo-section h3 {
+    color: var(--logo-text-color)
+}
+
+.logotextchange {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 5px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nav-links li span .bx {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--navlink-text-color);
+    transition: all .5s ease-in-out;
+}
+
+.nav-links li a::after {
+    content: " ";
+    position: absolute;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    border-radius: .1rem;
+    transition: .5s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+@media (max-width:1015px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+        z-index: 100;
+        transition: all .5s ease;
+    }
+
+    /* .bgch-scroll {
+    background-color: rgb(50, 97, 198);
+    box-shadow: 0 3px 10px rgb(19, 37, 97, .5);
+} */
+
+
+    .header .logo-section {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .logo-section svg {
+        height: 4vh;
+        color: var(--logo-color);
+    }
+
+    .logo-section h3 {
+        color: var(--logo-text-color);
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+        line-height: 1.2px;
+    }
+
+    .nav-links li {
+        transition: all .5s ease;
+    }
+
+    .nav-links li:hover {
+        scale: 1.1;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        font-size: .6rem;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        line-height: 2px;
+    }
+
+
+
+    .nav-links li span .bx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: var(--navlink-text-color);
+        transition: all .5s ease-in-out;
+    }
+
+    .nav-links li span .bx:hover {
+        color: var(--icon-color);
+    }
+
+
+    .nav-links li a::after {
+        display: none;
+        content: " ";
+        position: absolute;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        border-radius: .1rem;
+        transition: .5s ease-in-out;
+    }
+
+    .nav-links a:hover::after {
+        display: none;
+        width: 100%;
+    }
+}

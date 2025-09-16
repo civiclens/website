@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Here</title>
+
+  <link rel="stylesheet" href="assets/CSS/report.css">
+
+  <link rel="icon" type="image/x-icon" href="assets/IMAGES/complaint.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-building-check" viewBox="0 0 16 16">
+        <path
+          d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514" />
+        <path
+          d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z" />
+      </svg>
+      <h3>Report</h3>
+    </div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="home.html"><span><i class='bx bx-home-alt-2'></i></span>Home</a></li>
+        <li><a href="notification.html"><span><i class='bx bx-bell'></i></span>Notification</a></li>
+        <li><a href="profile.html"><span><i class='bx bx-user-circle'></i></span>Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="report-issue">
+    <form class="form" id="reportForm">
+      <div class="report-title">
+        <h1>Report an Issue</h1>
+      </div>
+
+      <!-- File Upload -->
+      <label for="input-file" id="drop-area">
+        <input type="file" accept="image/*" id="input-file" hidden multiple>
+        <div class="upload-image">
+            <label >📂</label>
+            <p>Drag & drop or click to upload images</p>
+        </div>
+      </label>
+      <div id="file-list"></div>
+
+      <!-- Issue Description -->
+      <div class="describe-the-issue">
+        <label for="issue-description">Describe the Issue</label>
+        <input type="text" id="issue-description" name="description" required>
+      </div>
+
+      <!-- Location -->
+      <div class="report-location">
+        <label for="location">Location</label>
+        <button type="button" class="btn btn-primary btn-sm mb-2" onclick="getLocation()">Get Current Location</button>
+        <input type="text" id="location" name="location" >
+      </div>
+
+      <button type="submit" class="report-submit">Submit Report</button>
+    </form>
+  </section>
+
+  <script src="assets/JAVA_SCRIPT/report.js"></script>
+</body>
+</html>

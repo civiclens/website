@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Reports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/CSS/all-reports.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-section">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
+        <path d="M10.854 5.146a.5.5 0 0 0-.708.708L11.293 7H4a.5.5 0 0 0 0 1h7.293l-1.147 1.146a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+        <path d="M3 0h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1zm10 1H3v14h10V1z"/>
+      </svg>
+      <h3>All Reports</h3>
+    </div>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="home.html"><span><i class='bx bx-home-alt-2'></i></span>Home</a></li>
+        <li><a href="notification.html"><span><i class='bx bx-bell'></i></span>Notification</a></li>
+        <li><a href="profile.html"><span><i class='bx bx-user-circle'></i></span>Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container mt-5 pt-5">
+    <h2 class="mb-4">All Submitted Reports</h2>
+
+    <!-- Reports Container -->
+    <div id="reports-container" class="row g-4"></div>
+  </section>
+
+  <!-- JS -->
+  <script type="module" src="assets/JAVA_SCRIPT/all-reports.js"></script>
+</body>
+</html>
